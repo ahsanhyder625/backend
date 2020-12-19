@@ -1,0 +1,537 @@
+{
+    "id": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+    "name": "census_mobile_api",
+    "description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [
+        "0c70e097-248f-4adc-aaf3-0c459a44e04d",
+        "ed584bfe-9df7-40f9-908a-7ded5611eef3",
+        "98c233f9-75a7-4d30-b5fb-23e58d07001f",
+        "8685c96c-765f-4ad8-9763-68139e0398a0",
+        "352e8a59-b8dc-4ff2-b653-9bc9a47e48c7"
+    ],
+    "protocolProfileBehavior": {},
+    "folders": [
+        {
+            "id": "0c70e097-248f-4adc-aaf3-0c459a44e04d",
+            "name": "Child Profile",
+            "description": "",
+            "auth": null,
+            "events": null,
+            "collection": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folder": null,
+            "order": [
+                "bb72efa1-997d-4e3e-8d61-ca689c551bd6",
+                "b44f931a-4d35-4a6a-8346-2cfa4e4e5479"
+            ],
+            "folders_order": [],
+            "protocolProfileBehavior": {},
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folderId": "0c70e097-248f-4adc-aaf3-0c459a44e04d"
+        },
+        {
+            "id": "98c233f9-75a7-4d30-b5fb-23e58d07001f",
+            "name": "District",
+            "description": "",
+            "auth": null,
+            "events": null,
+            "collection": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folder": null,
+            "order": [
+                "62708547-40ab-4960-beb9-4c6a73892c65",
+                "30f7b545-dd97-405b-8010-78cb084297bc"
+            ],
+            "folders_order": [],
+            "protocolProfileBehavior": {},
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folderId": "98c233f9-75a7-4d30-b5fb-23e58d07001f"
+        },
+        {
+            "id": "352e8a59-b8dc-4ff2-b653-9bc9a47e48c7",
+            "name": "File Upload",
+            "description": "",
+            "auth": null,
+            "events": null,
+            "collection": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folder": null,
+            "order": [
+                "45b550f2-cdf9-4526-aeff-a34e5df5bed2",
+                "4d1573fe-be9a-4cd4-9c3b-49590873947b"
+            ],
+            "folders_order": [],
+            "protocolProfileBehavior": {},
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folderId": "352e8a59-b8dc-4ff2-b653-9bc9a47e48c7"
+        },
+        {
+            "id": "ed584bfe-9df7-40f9-908a-7ded5611eef3",
+            "name": "State",
+            "description": "",
+            "auth": null,
+            "events": null,
+            "collection": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folder": null,
+            "order": [
+                "8c4f7374-116d-4b12-9fdd-0634c00ea8db",
+                "6738a8ac-7c34-4c44-9113-2bbb6621ba1c"
+            ],
+            "folders_order": [],
+            "protocolProfileBehavior": {},
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folderId": "ed584bfe-9df7-40f9-908a-7ded5611eef3"
+        },
+        {
+            "id": "8685c96c-765f-4ad8-9763-68139e0398a0",
+            "name": "User",
+            "description": "",
+            "auth": null,
+            "events": null,
+            "collection": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folder": null,
+            "order": [
+                "df6f2aa6-df09-45b6-9869-4ef1b3644d2e",
+                "e20fb216-b4be-4410-b360-46b44fb19a8d"
+            ],
+            "folders_order": [],
+            "protocolProfileBehavior": {},
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "folderId": "8685c96c-765f-4ad8-9763-68139e0398a0"
+        }
+    ],
+    "requests": [
+        {
+            "id": "30f7b545-dd97-405b-8010-78cb084297bc",
+            "name": "Create District",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/district/create",
+            "description": "",
+            "data": [
+                {
+                    "key": "state_id",
+                    "value": "1",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                },
+                {
+                    "key": "district_name",
+                    "value": "testDistrictName",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                }
+            ],
+            "dataOptions": null,
+            "dataMode": "params",
+            "headerData": [
+                {
+                    "key": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                }
+            ],
+            "method": "POST",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": "98c233f9-75a7-4d30-b5fb-23e58d07001f",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA\n",
+            "pathVariables": {}
+        },
+        {
+            "id": "45b550f2-cdf9-4526-aeff-a34e5df5bed2",
+            "name": "S3 Upload",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/upload-image/s3-upload",
+            "description": "",
+            "data": [
+                {
+                    "key": "mimeType",
+                    "value": "image/jpg",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                },
+                {
+                    "key": "imageName",
+                    "value": "abc.jpg",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                }
+            ],
+            "dataOptions": null,
+            "dataMode": "params",
+            "headerData": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "key": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA",
+                    "description": "",
+                    "enabled": true
+                }
+            ],
+            "method": "POST",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": [],
+            "folder": "352e8a59-b8dc-4ff2-b653-9bc9a47e48c7",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "headers": "Content-Type: application/x-www-form-urlencoded\ntoken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA\n",
+            "pathVariables": {}
+        },
+        {
+            "id": "4d1573fe-be9a-4cd4-9c3b-49590873947b",
+            "name": "PUT",
+            "url": "https://staging-dhwani.s3.ap-south-1.amazonaws.com/82ac44b1c5d7ef91a9e912abca5fc3f5.jpg?x-amz-acl=public-read&x-amz-meta-name=abc.jpg&x-amz-meta-alias=82ac44b1c5d7ef91a9e912abca5fc3f5.jpg&x-amz-meta-type=image%2Fjpg&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJGNIQMDDQLEKQTJQ%2F20191108%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20191108T104108Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=d17abae1adc7eb115be342a8143747d48830cdeebae5a781a819dd9ceb447dfd",
+            "description": "",
+            "data": [
+                {
+                    "key": "",
+                    "value": "/C:/Users/bhagyesh/Desktop/earth.png",
+                    "description": "",
+                    "type": "file",
+                    "enabled": true
+                }
+            ],
+            "dataOptions": null,
+            "dataMode": "params",
+            "headerData": [
+                {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "description": "",
+                    "type": "text"
+                }
+            ],
+            "method": "PUT",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "x-amz-acl",
+                    "value": "public-read",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "x-amz-meta-name",
+                    "value": "abc.jpg",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "x-amz-meta-alias",
+                    "value": "82ac44b1c5d7ef91a9e912abca5fc3f5.jpg",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "x-amz-meta-type",
+                    "value": "image%2Fjpg",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "UNSIGNED-PAYLOAD",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "X-Amz-Algorithm",
+                    "value": "AWS4-HMAC-SHA256",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "X-Amz-Credential",
+                    "value": "AKIAJGNIQMDDQLEKQTJQ%2F20191108%2Fap-south-1%2Fs3%2Faws4_request",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "X-Amz-Date",
+                    "value": "20191108T104108Z",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "host",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "X-Amz-Expires",
+                    "value": "1200",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "X-Amz-Signature",
+                    "value": "d17abae1adc7eb115be342a8143747d48830cdeebae5a781a819dd9ceb447dfd",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": "352e8a59-b8dc-4ff2-b653-9bc9a47e48c7",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "headers": "Content-Type: application/x-www-form-urlencoded\n",
+            "pathVariables": {}
+        },
+        {
+            "id": "62708547-40ab-4960-beb9-4c6a73892c65",
+            "name": "Get District List",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/master/get-district?state_id=1",
+            "description": "",
+            "data": null,
+            "dataOptions": null,
+            "dataMode": null,
+            "headerData": [
+                {
+                    "key": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA",
+                    "description": "",
+                    "enabled": true
+                }
+            ],
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "state_id",
+                    "value": "1",
+                    "equals": true,
+                    "description": "",
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": [],
+            "folder": "98c233f9-75a7-4d30-b5fb-23e58d07001f",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA\n",
+            "pathVariables": {}
+        },
+        {
+            "id": "6738a8ac-7c34-4c44-9113-2bbb6621ba1c",
+            "name": "Create State",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/state/create",
+            "description": "",
+            "data": [
+                {
+                    "key": "state_name",
+                    "value": "testStateName",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                }
+            ],
+            "dataOptions": null,
+            "dataMode": "params",
+            "headerData": [
+                {
+                    "key": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                }
+            ],
+            "method": "POST",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": "ed584bfe-9df7-40f9-908a-7ded5611eef3",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA\n",
+            "pathVariables": {}
+        },
+        {
+            "id": "8c4f7374-116d-4b12-9fdd-0634c00ea8db",
+            "name": "Get State List",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/master/get-state",
+            "description": "",
+            "data": null,
+            "dataOptions": null,
+            "dataMode": null,
+            "headerData": [
+                {
+                    "key": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA",
+                    "description": "",
+                    "enabled": true
+                }
+            ],
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": [],
+            "folder": "ed584bfe-9df7-40f9-908a-7ded5611eef3",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA\n",
+            "pathVariables": {}
+        },
+        {
+            "id": "b44f931a-4d35-4a6a-8346-2cfa4e4e5479",
+            "name": "Get Child Profile List",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/beneficiary/get-child-profile",
+            "description": "",
+            "data": null,
+            "dataOptions": null,
+            "dataMode": null,
+            "headerData": [
+                {
+                    "key": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA",
+                    "description": "",
+                    "enabled": true
+                }
+            ],
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": [],
+            "folder": "0c70e097-248f-4adc-aaf3-0c459a44e04d",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA\n",
+            "pathVariables": {}
+        },
+        {
+            "id": "bb72efa1-997d-4e3e-8d61-ca689c551bd6",
+            "name": "Create Child Profile",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/beneficiary/child-profile-create",
+            "description": "",
+            "data": [],
+            "dataOptions": null,
+            "dataMode": "raw",
+            "headerData": [
+                {
+                    "key": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEwMTEiLCJ1bmlxdWVfdXNlcl9pZCI6IjEwMTEiLCJuYW1lIjoiU3dhdGkgU29tYW5pIiwidXNlcm5hbWUiOiIxNDEyIiwibW9iaWxlIjoiNjM3NzE0NzU3MiIsImxldmVsX2lkIjoiNSIsInBhc3N3b3JkX3Jlc2V0X3Rva2VuIjoiMTQyNDg3IiwiZW1haWwiOiJzd2F0aXNvbWFuaTk1QGdtYWlsLmNvbSIsImF1dGhfa2V5IjoiZDQxZDhjZDk4ZjAwYjIwNGU5ODAwOTk4ZWNmODQyN2UiLCJzdGF0dXMiOiIxIiwiY3JlYXRlZF9hdCI6IjAwMDAtMDAtMDAgMDA6MDA6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxOS0xMC0xNSAwNzowNjoxMiIsImNoYW5nZWRfcGFzc3dvcmRfb25jZSI6bnVsbCwidXNlcl9lcnJvcl9mcmVxdWVuY3lfMSI6bnVsbCwidXNlcl9lcnJvcl9mcmVxdWVuY3lfMiI6IjMiLCJ1c2VyX2xldmVsIjoiQ2x1c3RlciBTdXBlcnZpc29yIiwibG9naW5faWQiOjR9.jDfocuaZhPcTyefEm-ZH-VOdPEsUdc-r8-bdAW-MJwI",
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "method": "POST",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": [],
+            "folder": "0c70e097-248f-4adc-aaf3-0c459a44e04d",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "rawModeData": "{\n    \"name\": \"Jhon Solanki\",\n    \"sex\": \"1\",\n    \"dob\": \"1992-06-15\",\n    \"father_name\": \"Peter Solanki\",\n    \"mother_name\": \"Julie Solanki\",\n    \"district_id\": 1,\n    \"photo\": \"https://staging-dhwani.s3.ap-south-1.amazonaws.com/82ac44b1c5d7ef91a9e912abca5fc3f5.jpg\"\n}",
+            "headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEwMTEiLCJ1bmlxdWVfdXNlcl9pZCI6IjEwMTEiLCJuYW1lIjoiU3dhdGkgU29tYW5pIiwidXNlcm5hbWUiOiIxNDEyIiwibW9iaWxlIjoiNjM3NzE0NzU3MiIsImxldmVsX2lkIjoiNSIsInBhc3N3b3JkX3Jlc2V0X3Rva2VuIjoiMTQyNDg3IiwiZW1haWwiOiJzd2F0aXNvbWFuaTk1QGdtYWlsLmNvbSIsImF1dGhfa2V5IjoiZDQxZDhjZDk4ZjAwYjIwNGU5ODAwOTk4ZWNmODQyN2UiLCJzdGF0dXMiOiIxIiwiY3JlYXRlZF9hdCI6IjAwMDAtMDAtMDAgMDA6MDA6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxOS0xMC0xNSAwNzowNjoxMiIsImNoYW5nZWRfcGFzc3dvcmRfb25jZSI6bnVsbCwidXNlcl9lcnJvcl9mcmVxdWVuY3lfMSI6bnVsbCwidXNlcl9lcnJvcl9mcmVxdWVuY3lfMiI6IjMiLCJ1c2VyX2xldmVsIjoiQ2x1c3RlciBTdXBlcnZpc29yIiwibG9naW5faWQiOjR9.jDfocuaZhPcTyefEm-ZH-VOdPEsUdc-r8-bdAW-MJwI\nContent-Type: application/json\n",
+            "pathVariables": {}
+        },
+        {
+            "id": "df6f2aa6-df09-45b6-9869-4ef1b3644d2e",
+            "name": "User/login",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/user/login",
+            "description": "",
+            "data": [
+                {
+                    "key": "username",
+                    "value": "1412",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                },
+                {
+                    "key": "password",
+                    "value": "142487",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                }
+            ],
+            "dataOptions": null,
+            "dataMode": "params",
+            "headerData": null,
+            "method": "POST",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": "8685c96c-765f-4ad8-9763-68139e0398a0",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "pathVariables": {}
+        },
+        {
+            "id": "e20fb216-b4be-4410-b360-46b44fb19a8d",
+            "name": "User Logout",
+            "url": "https://hrtaskapi.dhwaniris.in/index.php/api/user/logout",
+            "description": "",
+            "data": null,
+            "dataOptions": null,
+            "dataMode": null,
+            "headerData": [
+                {
+                    "key": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA",
+                    "description": "",
+                    "enabled": true
+                }
+            ],
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": [],
+            "folder": "8685c96c-765f-4ad8-9763-68139e0398a0",
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "17f8caf5-ea7b-4c8b-8e7a-fbae3b17b5e5",
+            "headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjQ3IiwidW5pcXVlX3VzZXJfaWQiOiIxMTg4IiwibmFtZSI6IkJhcm1lciBTb3V0aCBDb29yZGluYXRvciIsInVzZXJuYW1lIjoiMjA0MCIsIm1vYmlsZSI6Ijk5OTk5OTk5OTkiLCJsZXZlbF9pZCI6IjUiLCJwYXNzd29yZF9yZXNldF90b2tlbiI6bnVsbCwiZW1haWwiOiJhYmNuZ0BnbWFpbC5jb20iLCJhdXRoX2tleSI6ImQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0MjdlIiwic3RhdHVzIjoiMSIsImNyZWF0ZWRfYXQiOiIwMDAwLTAwLTAwIDAwOjAwOjAwIiwidXBkYXRlZF9hdCI6IjIwMTktMTEtMDYgMDc6MTg6MDQiLCJjaGFuZ2VkX3Bhc3N3b3JkX29uY2UiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzEiOm51bGwsInVzZXJfZXJyb3JfZnJlcXVlbmN5XzIiOiIxOCIsInVzZXJfbGV2ZWwiOiJDbHVzdGVyIFN1cGVydmlzb3IiLCJsb2dpbl9pZCI6M30.ak3OSYopsW211SvJnzH4nNLvcj9Z4B16fR329fZbHeA\n",
+            "pathVariables": {}
+        }
+    ]
+}
