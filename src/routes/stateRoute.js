@@ -1,4 +1,4 @@
-const stateController = require('../controllers/stateController');
+const stateController = require('../Controllers/state');
 const router = require('express').Router();
 const auth = require('../middleware/auth');
 

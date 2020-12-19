@@ -1,14 +1,14 @@
 const express = require('express')
 const dotenv = require('dotenv')
 
-const userRouter = require('./routes/userRoute')
-const stateRouter = require('./routes/stateRoute')
-const districtRouter = require('./routes/districtRoute')
-const childRouter = require('./routes/childRoute')
+const userRouter = require('./Routes/userRoute')
+const stateRouter = require('./Routes/stateRoute')
+const districtRouter = require('./Routes/districtRoute')
+const childRouter = require('./Routes/childRoute')
 
 dotenv.config();
 
-require('./db/mongoose')
+require('./dataBase/mongoose')
 
 const app = express()
 

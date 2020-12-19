@@ -1,4 +1,4 @@
-const District = require('../models/districtModel');
+const District = require('../Models/districtModel');
 
 exports.addDistrict = async (res, req) => {
 	const district = new District({

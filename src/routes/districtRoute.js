@@ -1,4 +1,4 @@
-const districtController = require('../controllers/districtController');
+const districtController = require('../Controllers/district');
 const router = require('express').Router();
 const auth = require('../middleware/auth');
 
